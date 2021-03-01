@@ -3,14 +3,54 @@ body, html{
   margin: 0px; 
   padding:0px; 
   font-family: 'Saira SemiCondensed', sans-serif;
+  background: #282828;
                                                 
+}
+
+#apply-to-be-mentor{
+  display:inline-block;
+  /* transform: translateY(180deg); */
+}
+#long-tape{
+  margin-left: 76px;
+  width:100vh;
+  transform:rotate(90deg); 
+  transform-origin: top left;
+  text-align: center;
+  /* width:100%; */
+  padding:5px; 
+  /* height:100%;  */
+  background:#353535; 
+  left:0px; 
+  top:0px;
+}
+
+#long-tape h3{
+  color:white;
+}
+.overlay { 
+  position:fixed;
+  width:100%; 
+  height:100%; 
+  background:red; 
+  opacity:.3; 
+  top:0px; 
+  left:0px;
+  z-index: 2;
+}
+.app-form-container{
+  width:45%; 
+  background:#383838; 
+  position: fixed; 
+  height:100%; 
+  right:0px;
+  top:0px;
+  z-index: 10;
 }
 
 .nav-container{ 
   display: flex;
-  width:100%; 
-  padding:20px; 
-  background:black; 
+  width:90%; 
   text-decoration: none;
   margin-top: 0px;
 
@@ -18,14 +58,29 @@ body, html{
 
 .nav-container ul{ 
   margin-left: auto;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 
 }
 .nav-container ul li {
+  padding:20px 0px;
+  /* padding-top:20px;  */
+  /* padding-bottom:30px; */
+  font-size: 24px;
   margin:0 10px;
   display: inline-block; 
   list-style: none;
   text-decoration: none;
   color:white;
+  border:solid 0px white; 
+  cursor: pointer;
 
+
+}
+
+.nav-container ul li:hover{
+  border-bottom-width: 1px;
+  color:cyan; 
+  transition:.2s ease-in-out;
+
+  
 }
