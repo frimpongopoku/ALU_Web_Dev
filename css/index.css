@@ -1,0 +1,31 @@
+
+body, html{
+  margin: 0px; 
+  padding:0px; 
+  font-family: 'Saira SemiCondensed', sans-serif;
+                                                
+}
+
+.nav-container{ 
+  display: flex;
+  width:100%; 
+  padding:20px; 
+  background:black; 
+  text-decoration: none;
+  margin-top: 0px;
+
+}
+
+.nav-container ul{ 
+  margin-left: auto;
+  margin-right: 50px;
+
+}
+.nav-container ul li {
+  margin:0 10px;
+  display: inline-block; 
+  list-style: none;
+  text-decoration: none;
+  color:white;
+
+}
