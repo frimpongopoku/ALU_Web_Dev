@@ -4,8 +4,63 @@ html {
   padding: 0px;
   font-family: "Saira SemiCondensed", sans-serif;
   background: #282828;
+  overflow-x: hidden;
 }
 
+.card-p {
+  /* margin: 0px; */
+  color: #757575;
+  font-size: 11px;
+  display: inline-block;
+  /* margin:5px; */
+  margin-top: 0px;
+  margin-right: 7px;
+}
+
+.card-p:hover {
+  color: cyan;
+  transition: cubic-bezier(1, 0, 0, 1);
+}
+.mentor-name {
+  margin: 0px;
+  color: white;
+  font-size: 26px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+.img-holder {
+  overflow: hidden;
+  width: 340px;
+  height: 360px;
+}
+.one-mentor-card {
+  display: inline-block;
+  border: solid 1px #353535;
+  /* border: solid 1px #ff9800; */
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.one-mentor-card:hover .mentor-img {
+  transform: scale(1.08);
+  transition: 0.3s ease-in-out;
+}
+
+.one-mentor-card:hover #right-arrow {
+  margin-left: 10px;
+  transition: 0.2s ease-in-out;
+}
+.mentor-img {
+  width: 340px;
+  height: 360px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.mentors-container {
+  width: 110%;
+  padding: 20px;
+}
 .simple-hero {
   padding: 10px 150px;
 }
@@ -19,10 +74,8 @@ html {
 .simple-hero h2 {
   font-size: 60px;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0px;
- 
-
 }
 
 .simple-hero p {
