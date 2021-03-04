@@ -17,7 +17,7 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-
+    <script src="/js/index.js" defer></script>
     <title>Los Mentos - Landing Page</title>
   </head>
   <body>
@@ -26,35 +26,40 @@
       <a id="nav-icon">ALU MENTORS</a>
       <ul>
         <li>HOME</li>
-        <li>APPLY TO BE A MENTOR</li>
+        <li id="apply-menu-btn" onclick="openAppForm()">
+          APPLY TO BE A MENTOR
+        </li>
         <li>ABOUT ME</li>
       </ul>
     </nav>
     <!-- ------------------------ FLAOTING APPLICATION FORM ---------------------- -->
-    <!-- <div class="overlay"></div> -->
-    <!-- <div class="app-form-container">
-      <i
-        class="fa fa-long-arrow-left"
-        style="
-          z-index: 13;
-          position: absolute;
-          top: 0px;
-          padding: 10px;
-          color: white;
-          margin-left: 13px;
-          font-size: 24px;
-        "
-      ></i>
-      <div id="long-tape">
+    <div class="overlay" id="overlay"></div>
+    <div class="app-form-container" id="app-form-container">
+      <span onclick="openAppForm()">
+        <i
+          id="arrow-direction"
+          class="fa fa-long-arrow-left"
+          style="
+            z-index: 13;
+            position: absolute;
+            top: 0px;
+            padding: 10px;
+            color: white;
+            margin-left: 13px;
+            font-size: 24px;
+          "
+        ></i>
+      </span>
+      <div id="long-tape" onclick="openAppForm()">
         <h3 id="apply-to-be-mentor">APPLY TO BE A MENTOR</h3>
       </div>
-    </div> -->
+    </div>
 
     <!-- ----------------------- EASY SIMPLE HERO --------------------------- -->
     <section>
       <div class="simple-hero">
         <h2 id="hero-title">All Mentors Here</h2>
-        <p>
+        <p style="font-weight: 200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
           doloremque fuga obcaecati facere, enim quisquam, temporibus optio
           ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
@@ -68,11 +73,13 @@
     <section style="padding: 0px 130px">
       <div class="mentors-container">
         <h4 style="color: white; font-size: 24px; font-weight: 300">
-          ALL MENTORS FROM MAURITIUS
+          ALL MENTORS FROM MAURITIUS <img src="/media/Flag-Mauritius.jpg"
+          style="height:19px; width:28px"
         </h4>
+        <br />
         <div class="one-mentor-card">
           <div class="img-holder">
-            <img src="https://picsum.photos/200/300" class="mentor-img" />
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
           </div>
           <div style="padding: 15px">
             <h5 class="mentor-name">
@@ -90,7 +97,7 @@
         </div>
         <div class="one-mentor-card">
           <div class="img-holder">
-            <img src="https://picsum.photos/200/300" class="mentor-img" />
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
           </div>
           <div style="padding: 15px">
             <h5 class="mentor-name">
@@ -108,7 +115,7 @@
         </div>
         <div class="one-mentor-card">
           <div class="img-holder">
-            <img src="https://picsum.photos/200/300" class="mentor-img" />
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
           </div>
           <div style="padding: 15px">
             <h5 class="mentor-name">
@@ -126,7 +133,7 @@
         </div>
         <div class="one-mentor-card">
           <div class="img-holder">
-            <img src="https://picsum.photos/200/300" class="mentor-img" />
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
           </div>
           <div style="padding: 15px">
             <h5 class="mentor-name">
@@ -142,7 +149,171 @@
             </p>
           </div>
         </div>
-     
+      </div>
+    </section>
+    <!--  ------------------- MENTORS FROM GHANA -------------------- -->
+    <section style="padding: 0px 130px">
+      <div class="mentors-container">
+        <h4 style="color: white; font-size: 24px; font-weight: 300">
+          ALL MENTORS FROM GHANA <img src="/media/gh_flag.png"
+          style="height:19px; width:28px"
+        </h4>
+        <br />
+        <div class="one-mentor-card">
+          <div class="img-holder">
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
+          </div>
+          <div style="padding: 15px">
+            <h5 class="mentor-name">
+              Richard Bradson
+              <i class="fa fa-long-arrow-right" id="right-arrow"></i>
+            </h5>
+            <p class="card-p">WEBSITE</p>
+            <p class="card-p">
+              <i class="fa fa-envelope" style="margin-right: 5px"></i>EMAIL
+            </p>
+            <p class="card-p">
+              <i class="fa fa-phone" style="margin-right: 5px"></i>+230 45678483
+            </p>
+          </div>
+        </div>
+        <div class="one-mentor-card">
+          <div class="img-holder">
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
+          </div>
+          <div style="padding: 15px">
+            <h5 class="mentor-name">
+              Richard Bradson
+              <i class="fa fa-long-arrow-right" id="right-arrow"></i>
+            </h5>
+            <p class="card-p">WEBSITE</p>
+            <p class="card-p">
+              <i class="fa fa-envelope" style="margin-right: 5px"></i>EMAIL
+            </p>
+            <p class="card-p">
+              <i class="fa fa-phone" style="margin-right: 5px"></i>TELEPHONE
+            </p>
+          </div>
+        </div>
+        <div class="one-mentor-card">
+          <div class="img-holder">
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
+          </div>
+          <div style="padding: 15px">
+            <h5 class="mentor-name">
+              Richard Bradson
+              <i class="fa fa-long-arrow-right" id="right-arrow"></i>
+            </h5>
+            <p class="card-p">WEBSITE</p>
+            <p class="card-p">
+              <i class="fa fa-envelope" style="margin-right: 5px"></i>EMAIL
+            </p>
+            <p class="card-p">
+              <i class="fa fa-phone" style="margin-right: 5px"></i>TELEPHONE
+            </p>
+          </div>
+        </div>
+        <div class="one-mentor-card">
+          <div class="img-holder">
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
+          </div>
+          <div style="padding: 15px">
+            <h5 class="mentor-name">
+              Richard Bradson
+              <i class="fa fa-long-arrow-right" id="right-arrow"></i>
+            </h5>
+            <p class="card-p">WEBSITE</p>
+            <p class="card-p">
+              <i class="fa fa-envelope" style="margin-right: 5px"></i>EMAIL
+            </p>
+            <p class="card-p">
+              <i class="fa fa-phone" style="margin-right: 5px"></i>TELEPHONE
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------ MENTORS FROM UK ----------------------- -->
+    <section style="padding: 0px 130px">
+      <div class="mentors-container">
+        <h4 style="color: white; font-size: 24px; font-weight: 300">
+          ALL MENTORS FROM THE UNITED KINGDOM <img src="/media/uk_flag.png"
+          style="height:19px; width:28px"
+        </h4>
+        <br />
+        <div class="one-mentor-card">
+          <div class="img-holder">
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
+          </div>
+          <div style="padding: 15px">
+            <h5 class="mentor-name">
+              Richard Bradson
+              <i class="fa fa-long-arrow-right" id="right-arrow"></i>
+            </h5>
+            <p class="card-p">WEBSITE</p>
+            <p class="card-p">
+              <i class="fa fa-envelope" style="margin-right: 5px"></i>EMAIL
+            </p>
+            <p class="card-p">
+              <i class="fa fa-phone" style="margin-right: 5px"></i>+230 45678483
+            </p>
+          </div>
+        </div>
+        <div class="one-mentor-card">
+          <div class="img-holder">
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
+          </div>
+          <div style="padding: 15px">
+            <h5 class="mentor-name">
+              Richard Bradson
+              <i class="fa fa-long-arrow-right" id="right-arrow"></i>
+            </h5>
+            <p class="card-p">WEBSITE</p>
+            <p class="card-p">
+              <i class="fa fa-envelope" style="margin-right: 5px"></i>EMAIL
+            </p>
+            <p class="card-p">
+              <i class="fa fa-phone" style="margin-right: 5px"></i>TELEPHONE
+            </p>
+          </div>
+        </div>
+        <div class="one-mentor-card">
+          <div class="img-holder">
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
+          </div>
+          <div style="padding: 15px">
+            <h5 class="mentor-name">
+              Richard Bradson
+              <i class="fa fa-long-arrow-right" id="right-arrow"></i>
+            </h5>
+            <p class="card-p">WEBSITE</p>
+            <p class="card-p">
+              <i class="fa fa-envelope" style="margin-right: 5px"></i>EMAIL
+            </p>
+            <p class="card-p">
+              <i class="fa fa-phone" style="margin-right: 5px"></i>TELEPHONE
+            </p>
+          </div>
+        </div>
+        <div class="one-mentor-card">
+          <div class="img-holder">
+            <img src="https://i.pravatar.cc/300" class="mentor-img" />
+          </div>
+          <div style="padding: 15px">
+            <h5 class="mentor-name">
+              Richard Bradson
+              <i class="fa fa-long-arrow-right" id="right-arrow"></i>
+            </h5>
+            <p class="card-p">WEBSITE</p>
+            <p class="card-p">
+              <i class="fa fa-envelope" style="margin-right: 5px"></i>EMAIL
+            </p>
+            <p class="card-p">
+              <i class="fa fa-phone" style="margin-right: 5px"></i>TELEPHONE
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </body>

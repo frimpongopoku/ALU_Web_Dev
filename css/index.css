@@ -65,11 +65,21 @@ html {
   padding: 10px 150px;
 }
 
+
+
 #nav-icon {
+  margin-left: 160px;
   padding: 30px 40px;
   color: black;
   background: white;
-  font-size: 31px;
+  font-size: 23px;
+  /* border-radius: 1000px; */
+  /* margin-top: 10px; */
+  /* height: MAX-CONTENT; */
+  height: 36px;
+  margin-top: 10px;
+  border-radius: 3px;
+
 }
 .simple-hero h2 {
   font-size: 60px;
@@ -100,20 +110,32 @@ html {
   background: #353535;
   left: 0px;
   top: 0px;
+  cursor:pointer;
 }
 
 #long-tape h3 {
   color: white;
+ 
 }
 .overlay {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
-  background: red;
-  opacity: 0.3;
+  background: black;
+  opacity: 0.2;
   top: 0px;
   left: 0px;
   z-index: 2;
+}
+.open-up {
+  transform: translateX(0px) !important;
+  transition:.3s ease-in-out;
+}
+
+.close-up{
+  transform: translateX(90%) !important;
+  transition:.3s ease-in-out;
 }
 .app-form-container {
   width: 45%;
@@ -123,6 +145,7 @@ html {
   right: 0px;
   top: 0px;
   z-index: 10;
+  transform: translateX(90%)
 }
 
 .nav-container {
