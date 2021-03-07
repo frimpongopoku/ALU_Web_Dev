@@ -5,7 +5,12 @@ quia consectetur totam non.
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
 doloremque fuga obcaecati facere, enim quisquam, temporibus optio
 ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
-quia consectetur totam non.`;
+quia consectetur totam non.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+doloremque fuga obcaecati facere, enim quisquam, temporibus optio
+ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
+quia consectetur totam non.
+`;
 
 const mentors = [
   {
