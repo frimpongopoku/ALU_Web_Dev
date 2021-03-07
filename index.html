@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- ---------------------- FLOATING MODAL -------------------- -->
-    <div class="modal-holder modal-off" id = "modal-holder">
+    <div class="modal-holder modal-off" id="modal-holder">
       <small id="close" onclick="toggleModal(null)">Close</small>
       <img
         src="https://i.pravatar.cc/300"
@@ -36,46 +36,49 @@
         style="
           padding: 10px;
           width: 97.5%;
-          background: white;
+          background: #97f3ff;
           margin-top: -10px;
         "
         class="z-depth-float"
       >
         <small
-          ><a href="#" class="modal-a" 
-            ><i class="fa fa-envelope"></i> <span id="modal-email">mrfimpong@gmail.com</span></a
+          ><a href="#" class="modal-a"
+            ><i class="fa fa-envelope"></i>
+            <span id="modal-email">mrfimpong@gmail.com</span></a
           ></small
         >
         <small
-          ><a href="#" class="modal-a" 
-            ><i class="fa fa-globe"></i> <span id = "modal-website">www.google.com</span></a
+          ><a href="#" class="modal-a"
+            ><i class="fa fa-globe"></i>
+            <span id="modal-website">www.google.com</span></a
           ></small
         >
         <small
-          ><a href="#" class="modal-a" 
-            ><i class="fa fa-phone"></i> <span id = "modal-phone">+230 5488459</span></a
+          ><a href="#" class="modal-a"
+            ><i class="fa fa-phone"></i>
+            <span id="modal-phone">+230 5488459</span></a
           ></small
         >
       </div>
 
       <div style="padding: 15px 30px">
-        <h3 class="mentor-name" style="color: #282828" id="modal-mentor-name">Richard Brandson</h3>
-        <p style="font-weight: 200" id = "modal-bio">
+        <h3 class="mentor-name" style="color: white" id="modal-mentor-name">
+          Richard Brandson
+        </h3>
+        <p style="font-weight: 200" id="modal-bio">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
           doloremque fuga obcaecati facere, enim quisquam, temporibus optio
           ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
-          quia consectetur totam non.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-          doloremque fuga obcaecati facere, enim quisquam, temporibus optio
-          ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
-          quia consectetur totam non.
+          quia consectetur totam non. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Modi doloremque fuga obcaecati facere, enim
+          quisquam, temporibus optio ducimus magni aliquam nulla. Eligendi
+          officia eaque nesciunt facilis quia consectetur totam non.
         </p>
-     
       </div>
     </div>
     <!-- ----------------------- NAVIGATION BAR AREA ------------------------- -->
     <nav class="nav-container">
-      <a id="nav-icon">ALU MENTORS</a>
+      <!-- <a id="nav-icon">ALU MENTORS</a> -->
       <ul>
         <li>HOME</li>
         <li id="apply-menu-btn" onclick="openAppForm()">
@@ -105,21 +108,72 @@
       <div id="long-tape" onclick="openAppForm()">
         <h3 id="apply-to-be-mentor">APPLY TO BE A MENTOR</h3>
       </div>
+
+      <div class="form-container">
+        <div style="padding-left: 20px">
+          <h1 class="apply-title">Apply To Be Mentor</h1>
+          <p>
+            Thanks for you interest in applying to be a mentor. <br />Please
+            fill out the form below and we will get in touch <br />
+            with you within two business days
+          </p>
+          <div>
+            <div class="form-item">
+              <small>What Would You Like To Be Called?</small>
+              <input type="text" class="form-textbox" placeholder="Full Name" />
+            </div>
+            <div class="form-item">
+              <small>What Country Are You From?</small>
+              <input
+                type="text"
+                class="form-textbox"
+                placeholder="Your Country"
+              />
+            </div>
+            <div class="form-item">
+              <small>Your Personal Email?</small>
+              <input
+                type="text"
+                class="form-textbox"
+                placeholder="Personal Email"
+              />
+            </div>
+            <div class="form-item">
+              <small>Your Phone Number?</small>
+              <input
+                type="number"
+                class="form-textbox"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="form-item">
+              <small>Tell Us A Bit About Yourself</small>
+              <textarea
+                style="resize: none"
+                class="form-textbox"
+                rows="4"
+                placeholder="Tell Us About Yourself"
+              ></textarea>
+            </div>
+
+            <Button class="simple-btn">SEND</Button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ----------------------- EASY SIMPLE HERO --------------------------- -->
     <section>
       <div class="simple-hero">
-        <h2 id="hero-title">All Mentors Here</h2>
+        <h2 id="hero-title">LOS MENTOS</h2>
         <p style="font-weight: 200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
           doloremque fuga obcaecati facere, enim quisquam, temporibus optio
           ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
-          quia consectetur totam non.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-          doloremque fuga obcaecati facere, enim quisquam, temporibus optio
-          ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
-          quia consectetur totam non.
+          quia consectetur totam non. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Modi doloremque fuga obcaecati facere, enim
+          quisquam, temporibus optio ducimus magni aliquam nulla. Eligendi
+          officia eaque nesciunt facilis quia consectetur totam non.
         </p>
 
         <!-- <Button id="test" onclick="toggleModal()"> Test test test button</Button> -->
