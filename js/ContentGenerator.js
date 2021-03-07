@@ -1,5 +1,9 @@
 const element = (tag) => document.createElement(tag);
-
+const getAnime = () => {
+  const animes = ["fade-in-quick", "fade-in-mid-slow", "fade-in-late"];
+  const index = Math.floor(Math.random() * 3); // ref: https://www.w3schools.com/jsref/jsref_random.asp
+  return animes[index];
+};
 const generateMentorBox = (data) => {
   const { pic } = data;
   const _name = data.name;
@@ -34,6 +38,7 @@ const generateMentorBox = (data) => {
   div.addEventListener("click", function () {
     toggleModal(data);
   });
+  div.classList.add(getAnime());
   return div;
 };
 

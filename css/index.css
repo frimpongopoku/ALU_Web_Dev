@@ -4,13 +4,12 @@ html {
   padding: 0px;
   font-family: "Saira SemiCondensed", sans-serif;
   /* background: #282828; */
-  background:#0a0a0a;
+  background: #0a0a0a;
   overflow-x: hidden;
 }
 /* colors: #97f3ff */
 
-
-.simple-btn{
+.simple-btn {
   font-family: "Saira SemiCondensed", sans-serif;
   padding: 15px 50px;
   background: orange;
@@ -20,14 +19,13 @@ html {
   margin-top: 10px;
   font-weight: 700;
 }
-.simple-btn:focus{
+.simple-btn:focus {
   outline: 0;
-  
 }
 
-.simple-btn:hover{
-  background:rgb(0, 207, 207); 
-  transition:.3s ease-in-out;
+.simple-btn:hover {
+  background: rgb(0, 207, 207);
+  transition: 0.3s ease-in-out;
 }
 #close {
   position: absolute;
@@ -92,10 +90,8 @@ html {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    color:white;
+  color: white;
 }
-
-
 
 .card-p {
   /* margin: 0px; */
@@ -129,6 +125,7 @@ html {
   /* border: solid 1px #ff9800; */
   cursor: pointer;
   overflow: hidden;
+  opacity: 0;
 }
 
 .one-mentor-card:hover .mentor-img {
@@ -194,7 +191,7 @@ html {
   /* width:100%; */
   padding: 5px;
   /* height:100%;  */
-  background: rgb(6 172 193);
+  background: black;
   left: 0px;
   top: 0px;
   cursor: pointer;
@@ -214,10 +211,10 @@ html {
   left: 0px;
   z-index: 2;
 }
-.form-item{
+.form-item {
   margin-top: 15px;
 }
-.form-item small{
+.form-item small {
   letter-spacing: 2px;
   font-weight: 300;
   display: block;
@@ -232,6 +229,8 @@ html {
   font-size: 1.7rem;
   color: white;
   font-family: "Saira SemiCondensed", sans-serif;
+  animation: fade-in 1.5s forwards 0.8s;
+  
 }
 
 .form-textbox:focus {
@@ -249,7 +248,6 @@ html {
   font-size: xxx-large;
   color: white;
   font-weight: 400;
- 
 }
 
 .form-container p {
@@ -268,7 +266,7 @@ html {
 }
 .app-form-container {
   width: 45%;
-  background: #1b1a1a;
+  background: #0a0a0a;
   position: fixed;
   height: 100%;
   right: 0px;
@@ -289,7 +287,7 @@ html {
   /* margin-right: 50px; */
 }
 .nav-container ul li {
-  font-weight:300;
+  font-weight: 300;
   padding: 20px 0px;
   /* padding-top:20px;  */
   /* padding-bottom:30px; */
@@ -313,4 +311,24 @@ html {
   box-shadow: 0 1px 0px 0 rgba(0, 0, 0, -1.84), 0 2px 10px 0 rgba(0, 0, 0, 0.1) !important;
   -webkit-box-shadow: 0 1px 0px 0 rgba(0, 0, 0, -1.84),
     0 2px 10px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.fade-in-quick {
+  animation: fade-in 1s forwards 0.4s;
+}
+.fade-in-mid-slow {
+  animation: fade-in 1.5s forwards 0.8s;
+}
+.fade-in-late {
+  animation: fade-in 2s forwards 1.2s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
