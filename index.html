@@ -17,6 +17,7 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <script src="/js/db/mentors.js" defer></script>
     <script src="/js/ContentGenerator.js" defer></script>
     <script src="/js/index.js" defer></script>
 
@@ -24,8 +25,8 @@
   </head>
   <body>
     <!-- ---------------------- FLOATING MODAL -------------------- -->
-    <div class="modal-holder">
-      <small id="close">Close</small>
+    <div class="modal-holder modal-off" id = "modal-holder">
+      <small id="close" onclick="toggleModal()">Close</small>
       <img
         src="https://i.pravatar.cc/300"
         style="width: 100%; height: 45vh; object-fit: cover"
@@ -68,6 +69,7 @@
           ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
           quia consectetur totam non.
         </p>
+     
       </div>
     </div>
     <!-- ----------------------- NAVIGATION BAR AREA ------------------------- -->
@@ -81,7 +83,7 @@
         <li>ABOUT ME</li>
       </ul>
     </nav>
-    <!-- ------------------------ FLAOTING APPLICATION FORM ---------------------- -->
+    <!-- ------------------------ FLOATING APPLICATION FORM ---------------------- -->
     <div class="overlay" id="overlay"></div>
     <div class="app-form-container" id="app-form-container">
       <span onclick="openAppForm()">
@@ -118,6 +120,8 @@
           ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
           quia consectetur totam non.
         </p>
+
+        <Button id="test" onclick="toggleModal()"> Here We Go Again Andn So What</Button>
       </div>
     </section>
 
