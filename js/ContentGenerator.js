@@ -1,6 +1,8 @@
 const element = (tag) => document.createElement(tag);
 
-const generateMentorBox = () => {
+const generateMentorBox = (data) => {
+  const { pic } = data;
+  const _name = data.name;
   let div = element("div");
   let imgDiv = element("div");
   let img = element("img");
@@ -14,7 +16,7 @@ const generateMentorBox = () => {
   div.classList.add("one-mentor-card");
   imgDiv.classList.add("img-holder");
   img.classList.add("mentor-img");
-  img.src = "https://i.pravatar.cc/300";
+  img.src = pic;
   detailsDiv.style.padding = "15px";
   mentorName.classList.add("mentor-name");
   rightArrowIcon.className = "fa";
@@ -22,14 +24,16 @@ const generateMentorBox = () => {
   // --------------------------------------
   imgDiv.appendChild(img);
   mentorName.appendChild(rightArrowIcon);
-  mentorName.innerHTML = "Richard Bradson";
+  mentorName.innerHTML = _name;
   detailsDiv.appendChild(mentorName);
   detailsDiv.appendChild(website);
   detailsDiv.appendChild(email);
   detailsDiv.appendChild(phone);
   div.appendChild(imgDiv);
   div.appendChild(detailsDiv);
-
+  div.addEventListener("click", function () {
+    toggleModal(data);
+  });
   return div;
 };
 
@@ -40,7 +44,7 @@ const generateTextAndIcon = (content, ic) => {
   span.innerHTML = content;
   text.classList.add("card-p");
   icon.className = "fa";
-  icon.style.marginRight = "5px"
+  icon.style.marginRight = "5px";
   icon.classList.add(ic);
   text.appendChild(icon);
   text.appendChild(span);

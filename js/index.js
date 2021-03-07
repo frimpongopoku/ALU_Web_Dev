@@ -1,5 +1,3 @@
-
-
 const grab = (id) => document.getElementById(id);
 const arrow = grab("arrow-direction");
 const applyMenuBtn = grab("apply-menu-btn");
@@ -28,23 +26,36 @@ const openAppForm = () => {
   formToggled = !formToggled;
 };
 
-const generateMentorsForSection = (many, id) => {
-  const section = grab(id);
-  for (let i = 0; i < many; i++) {
-    section.appendChild(generateMentorBox());
+const generateMentorsForSection = (data) => {
+  const section = grab(data.section);
+  const _mentors = data.mentors;
+  for (let i = 0; i < data.mentors.length; i++) {
+    section.appendChild(generateMentorBox(_mentors[i]));
   }
 };
 
-generateMentorsForSection(4, "mu-section");
-generateMentorsForSection(4, "gh-section");
-generateMentorsForSection(4, "uk-section");
 
-const toggleModal = () => {
+const inflateModalWithContent = (data) =>{
+  const img = grab("modal-img");
+  const email = grab("modal-email")
+  const phone = grab("modal-phone"); 
+  const website = grab("modal-website"); 
+  const modalMentorName = grab("modal-mentor-name");
+  const modalBio = grab("modal-bio"); 
+  email.innerHTML = data.email; 
+  phone.innerHTML = data.phone; 
+  website.innerHTML = data.website; 
+  modalMentorName.innerHTML = data.name; 
+  modalBio.innerHTML = data.bio; 
+  img.src = data.pic;
+}
+const toggleModal = (data) => {
   if (!modalToggled) {
     modal.classList.add("show-modal");
     modal.classList.remove("modal-off");
     modalToggled = true;
     overlay.style.display = "block";
+    inflateModalWithContent(data);
     // overlay.style.style.zIndex = 21;
   } else {
     modal.classList.remove("show-modal");
@@ -55,4 +66,9 @@ const toggleModal = () => {
   }
 };
 
-console.log(mentors);
+
+// ------------------------------------------------------------------------
+generateMentorsForSection(mentors[0]);
+generateMentorsForSection(mentors[1]);
+generateMentorsForSection(mentors[2]);
+
