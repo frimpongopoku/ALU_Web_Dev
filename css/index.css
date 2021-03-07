@@ -8,6 +8,11 @@ html {
   overflow-x: hidden;
 }
 
+.ico { 
+  height: 150px;
+  position: absolute;
+  left: 129px;
+}
 .simple-btn {
   font-family: "Saira SemiCondensed", sans-serif;
   padding: 15px 50px;
@@ -296,7 +301,7 @@ html {
   display: inline-block;
   list-style: none;
   text-decoration: none;
-  color: white;
+  color: #ff9800;
   border: solid 0px white;
   cursor: pointer;
 }
