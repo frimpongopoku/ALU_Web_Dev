@@ -1,5 +1,6 @@
 Name: Frimpong Opoku Agyemang 
 Country: Ghana 
+Student Number: s2023351
 Assignment: Web Development ( Using CSS Build A Platform That Gives Access To Mentors)
 Date: 7th March 2020 
 
@@ -23,3 +24,10 @@ External Resources Used:
   Otherwise, everything was manually done and pushed to this github  
   repository below: 
   = https://github.com/frimpongopoku/ALU_Web_Dev/tree/Mentors_part_1
+
+  Dummy mentors were used in this application. 
+  * I used javascript to generate the html content dynamically 
+  instead of copying and pasting html content which was really hard 
+  to manage.
+  * Animations were done by simply swapping and removing CSS classes 
+  in different situations. 
