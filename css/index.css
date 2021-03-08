@@ -8,16 +8,94 @@ html {
   overflow-x: hidden;
 }
 
-.r-label{
+.about-p {
+  margin-left: auto;
+  font-size: 38px;
+  margin-right: 30px;
+}
+.frimpong {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -50px;
+  box-shadow: -4px -2px 7px;
+  z-index: 2;
+}
+
+.contact-pane {
+  background: #da870c;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  /* padding:20px; */
+}
+.social {
+  color:white; 
+  text-decoration: none;
+  /* border: solid 2px white; */
+  padding: 3px 14px;
+  /* border-radius: 55px; */
+  cursor: pointer;
+  margin:2px;
+}
+
+.social:hover{
+  color:cyan; 
+  border-color: cyan;
+  transition: .3s ease-in-out;
+}
+.contact-pane p {
+  display: inline;
+}
+.about-content {
+  margin: 0px 20%;
+}
+
+.about-content .div {
+  position: relative;
+  background: white;
+  padding: 20px;
+  box-shadow: 6px 10px 8px 5px;
+  border-radius: 6px;
+  min-height: 50vh;
+}
+
+.about-content p {
+  letter-spacing: 1px;
+}
+
+.about-p:hover {
+  /* text-decoration: underline; */
+  color: cyan;
+  transition: 0.3s ease-in-out;
+}
+.about-me-page {
+  background: #282828;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 30;
+}
+
+.r-label {
   text-transform: uppercase;
 }
-#modal-company{
-  padding:5px 20px; 
-  border:solid 1px cyan; 
+#modal-company {
+  padding: 5px 20px;
+  border: solid 1px cyan;
   border-radius: 55px;
   margin-left: 10px;
 }
-.ico { 
+.ico {
   height: 150px;
   position: absolute;
   left: 129px;
@@ -134,7 +212,7 @@ html {
   height: 360px;
 }
 
-#right-arrow{ 
+#right-arrow {
   margin-left: 10px;
 }
 .one-mentor-card {
@@ -245,7 +323,6 @@ html {
   color: white;
   font-family: "Saira SemiCondensed", sans-serif;
   animation: fade-in 1.5s forwards 0.8s;
-  
 }
 
 .form-textbox:focus {
