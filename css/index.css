@@ -8,6 +8,26 @@ html {
   overflow-x: hidden;
 }
 
+@keyframes come-up { 
+  from { 
+    transform: translateY(100vh);
+    opacity:0;
+  }
+  to{ 
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+.about-off{
+  display: none; 
+  opacity:0; 
+
+}
+
+.about-on{ 
+  display:block; 
+  animation: come-up .4s ease-out;
+}
 .about-p {
   margin-left: auto;
   font-size: 38px;
@@ -46,6 +66,10 @@ html {
   margin:2px;
 }
 
+.show-about-content{
+  display: block  !important;
+  animation: scale-modal-in 0.5s forwards .5s;
+}
 .social:hover{
   color:cyan; 
   border-color: cyan;
@@ -55,7 +79,9 @@ html {
   display: inline;
 }
 .about-content {
-  margin: 0px 20%;
+  margin: 0px 20%; 
+  opacity:0;
+  display: none;
 }
 
 .about-content .div {
@@ -67,6 +93,7 @@ html {
   min-height: 50vh;
 }
 
+
 .about-content p {
   letter-spacing: 1px;
 }
@@ -77,13 +104,18 @@ html {
   transition: 0.3s ease-in-out;
 }
 .about-me-page {
-  background: #282828;
+  background: #1d1c1c;
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 30;
+}
+
+.about-page-gone{ 
+  opacity:0; 
+  display:none;
 }
 
 .r-label {

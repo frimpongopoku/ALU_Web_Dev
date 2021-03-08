@@ -87,7 +87,7 @@
         <li id="apply-menu-btn" onclick="openAppForm()">
           APPLY TO BE A MENTOR
         </li>
-        <li>ABOUT ME</li>
+        <li id="about-menu-btn" onclick="toggleAboutPage()">ABOUT ME</li>
       </ul>
     </nav>
     <!-- ------------------------ FLOATING APPLICATION FORM ---------------------- -->
@@ -187,22 +187,28 @@
     </section>
 
     <!-- ----------------------  ABOUT ME PAGE --------------- -->
-    <section class="about-me-page">
+    <section class="about-me-page about-off" id="about-me-page">
       <div>
         <div
           style="display: flex; padding: 20px; color: white; cursor: pointer"
         >
-          <p class="about-p" id="about-back-btn">
+          <p class="about-p"  onClick="toggleAboutPage()">
             <i class="fa fa-long-arrow-left" style="margin-right: 10px"></i>
             HOME
           </p>
         </div>
 
-        <div class="about-content">
+        <div class="about-content" id ="about-content">
           <img src="/media/frimpong.JPG" class="frimpong" />
           <div class="div">
             <h2>ABOUT FRIMPONG OPOKU AGYEMANG</h2>
             <p>
+              Frimpong Opoku Agyemang is a young ghanaian, who is passionate about technology. 
+              He belongs to a family of 10, is currently a second year at the African Leadership Univeristy. 
+              He divides most of his time into, learning about new software development tools, playing videos games, 
+              and playing soccer. He loves everything about application development(Web, Android, IOS etc), and aiims
+              to specialise in all platforms of software development in the near future.
+              <br/>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
               doloremque fuga obcaecati facere, enim quisquam, temporibus optio
               ducimus magni aliquam nulla. Eligendi officia eaque nesciunt

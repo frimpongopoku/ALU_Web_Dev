@@ -5,8 +5,11 @@ const appForm = grab("app-form-container");
 const overlay = grab("overlay");
 const modal = grab("modal-holder");
 const test = grab("test");
+const aboutSection = grab("about-me-page");
+const aboutContent = grab("about-content");
 var formToggled = false;
 var modalToggled = false;
+var aboutToggled = false;
 
 const openAppForm = () => {
   if (!formToggled) {
@@ -34,23 +37,22 @@ const generateMentorsForSection = (data) => {
   }
 };
 
-
-const inflateModalWithContent = (data) =>{
-  const company = grab("modal-company")
+const inflateModalWithContent = (data) => {
+  const company = grab("modal-company");
   const img = grab("modal-img");
-  const email = grab("modal-email")
-  const phone = grab("modal-phone"); 
-  const website = grab("modal-website"); 
+  const email = grab("modal-email");
+  const phone = grab("modal-phone");
+  const website = grab("modal-website");
   const modalMentorName = grab("modal-mentor-name");
-  const modalBio = grab("modal-bio"); 
-  email.innerHTML = data.email; 
-  phone.innerHTML = data.phone; 
-  website.innerHTML = data.website; 
-  modalMentorName.innerHTML = data.name; 
-  modalBio.innerHTML = data.bio; 
+  const modalBio = grab("modal-bio");
+  email.innerHTML = data.email;
+  phone.innerHTML = data.phone;
+  website.innerHTML = data.website;
+  modalMentorName.innerHTML = data.name;
+  modalBio.innerHTML = data.bio;
   img.src = data.pic;
   company.innerHTML = data.company;
-}
+};
 const toggleModal = (data) => {
   if (!modalToggled) {
     modal.classList.add("show-modal");
@@ -68,9 +70,22 @@ const toggleModal = (data) => {
   }
 };
 
+const toggleAboutPage = () => {
+  if (!aboutToggled) {
+    aboutSection.classList.add("about-on");
+    aboutSection.classList.remove("about-off");
+    aboutContent.classList.add("show-about-content");
+    aboutToggled = true;
+  } else {
+    aboutContent.classList.remove("show-about-content");
+    aboutSection.classList.add("about-off");
+    aboutSection.classList.remove("about-on");
+
+    aboutToggled = false;
+  }
+};
 
 // ------------------------------------------------------------------------
 generateMentorsForSection(mentors[0]);
 generateMentorsForSection(mentors[1]);
 generateMentorsForSection(mentors[2]);
-
