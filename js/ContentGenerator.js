@@ -12,10 +12,12 @@ const generateMentorBox = (data) => {
   let img = element("img");
   let detailsDiv = element("div");
   let mentorName = element("h5");
+  let mentorNameText = element("span");
   let rightArrowIcon = element("i");
   let website = generateTextAndIcon("WEBSITE", "fa-globe");
   let email = generateTextAndIcon("EMAIL", "fa-envelope");
   let phone = generateTextAndIcon("TELEPHONE", "fa-phone");
+  let company = generateTextAndIcon(data.company, "fa-building");
   // -----------------------------------
   div.classList.add("one-mentor-card");
   imgDiv.classList.add("img-holder");
@@ -25,14 +27,17 @@ const generateMentorBox = (data) => {
   mentorName.classList.add("mentor-name");
   rightArrowIcon.className = "fa";
   rightArrowIcon.classList.add("fa-long-arrow-right");
+  rightArrowIcon.id = "right-arrow";
+  company.classList.add("r-label");
   // --------------------------------------
   imgDiv.appendChild(img);
+  mentorName.appendChild(mentorNameText);
   mentorName.appendChild(rightArrowIcon);
-  mentorName.innerHTML = _name;
+  mentorNameText.innerHTML = _name;
   detailsDiv.appendChild(mentorName);
   detailsDiv.appendChild(website);
   detailsDiv.appendChild(email);
-  detailsDiv.appendChild(phone);
+  detailsDiv.appendChild(company);
   div.appendChild(imgDiv);
   div.appendChild(detailsDiv);
   div.addEventListener("click", function () {
@@ -42,16 +47,18 @@ const generateMentorBox = (data) => {
   return div;
 };
 
-const generateTextAndIcon = (content, ic) => {
+const generateTextAndIcon = (content, ic, hasIco = true) => {
   let text = element("a");
   let icon = element("i");
   let span = element("span");
   span.innerHTML = content;
   text.classList.add("card-p");
-  icon.className = "fa";
-  icon.style.marginRight = "5px";
-  icon.classList.add(ic);
-  text.appendChild(icon);
+  if (ic) {
+    icon.className = "fa";
+    icon.style.marginRight = "5px";
+    icon.classList.add(ic);
+  }
+  if (hasIco) text.appendChild(icon);
   text.appendChild(span);
   return text;
 };

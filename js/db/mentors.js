@@ -18,7 +18,7 @@ const mentors = [
     country: "Ghana",
     mentors: [
       {
-        name: "Samuel Opoku Agyemang",
+        name: "Samuel O. Agyemang",
         job: "Software Engineer",
         company: "Slack",
         email: "sam@gmail.com",
@@ -28,11 +28,11 @@ const mentors = [
         bio: lorem,
       },
       {
-        name: "Charles Opoku Agyemang",
+        name: "Charles O.Agyemang",
         job: "Software Developer",
-        company: "Slack",
+        company: "Vodafone Ghana Ltd",
         bio: lorem,
-        email: "sam@gmail.com",
+        email: "charles@gmail.com",
         phone: "+233 456 789 43",
         website: "sam.website.com",
         pic: "https://i.pravatar.cc/400?img=64",
@@ -40,9 +40,9 @@ const mentors = [
       {
         name: "Tahiru Abdullai",
         job: "Mobile App Developer",
-        company: "Slack",
+        company: "Arispat Technologies",
         bio: lorem,
-        email: "sam@gmail.com",
+        email: "tahiru.Abdullai@gmail.com",
         phone: "+233 456 789 43",
         website: "sam.website.com",
         pic: "https://i.pravatar.cc/400?img=68",
@@ -50,7 +50,7 @@ const mentors = [
       {
         name: "Faddal Ibrahim",
         job: "Full Stack Developer",
-        company: "Slack",
+        company: "Demigraph Technlinks Ltd.",
         bio: lorem,
         email: "faddal@gmail.com",
         phone: "+233 456 789 43",
@@ -60,7 +60,7 @@ const mentors = [
       {
         name: "Assan Ewudzi Nathaniel",
         job: "Full Stack Developer",
-        company: "Slack",
+        company: "Achimota University Comp",
         bio: lorem,
         email: "assan@gmail.com",
         phone: "+233 456 789 43",
@@ -76,7 +76,7 @@ const mentors = [
       {
         name: "Mani Riaz",
         job: "Full Stack Engineer",
-        company: "Slack",
+        company: "Mauritius Commercial Bank",
         bio: lorem,
         email: "mani@gmail.com",
         phone: "+233 456 789 43",
@@ -86,7 +86,7 @@ const mentors = [
       {
         name: "Sania Sooraj",
         job: "Software Developer",
-        company: "Slack",
+        company: "Xender Tech",
         bio: lorem,
         email: "saniaj@gmail.com",
         phone: "+233 456 789 43",
@@ -96,7 +96,7 @@ const mentors = [
       {
         name: "Sharon Ramgoolam",
         job: "Mobile App Developer",
-        company: "Slack",
+        company: "MoneyGram Company",
         bio: lorem,
         email: "shaRamgoo@gmail.com",
         phone: "+233 456 789 43",
@@ -106,7 +106,7 @@ const mentors = [
       {
         name: "Raychel Soulayman",
         job: "Full Stack Developer",
-        company: "Slack",
+        company: "Sporf Techy Ltd.",
         bio: lorem,
         email: "SoulayRay@gmail.com",
         phone: "+233 456 789 43",
@@ -132,7 +132,7 @@ const mentors = [
       {
         name: "Elizabeth Breadington",
         job: "Software Engineer",
-        company: "Slack",
+        company: "Microsoft",
         bio: lorem,
         email: "elizington@gmail.com",
         phone: "+233 456 789 43",
@@ -142,7 +142,7 @@ const mentors = [
       {
         name: "Brood Washington",
         job: "Software Developer",
-        company: "Slack",
+        company: "Google",
         bio: lorem,
         email: "broodtoni@gmail.com",
         phone: "+233 456 789 43",
@@ -152,7 +152,7 @@ const mentors = [
       {
         name: "Heppy Roads",
         job: "Mobile App Developer",
-        company: "Slack",
+        company: "Linux",
         bio: lorem,
         email: "heppyRds@gmail.com",
         phone: "+233 456 789 43",
@@ -162,7 +162,7 @@ const mentors = [
       {
         name: "Rosewood Michaelson",
         job: "Apple Inc",
-        company: "Slack",
+        company: "Xaomi UK",
         bio: lorem,
         email: "wood@gmail.com",
         phone: "+233 456 789 43",
@@ -172,7 +172,7 @@ const mentors = [
       {
         name: "Harry Bridgeton",
         job: "Frontend Developer",
-        company: "Microsoft",
+        company: "OA Tech UK.",
         bio: lorem,
         email: "fabilaal@gmail.com",
         phone: "+233 456 789 43",

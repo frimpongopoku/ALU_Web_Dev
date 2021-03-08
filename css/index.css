@@ -8,6 +8,15 @@ html {
   overflow-x: hidden;
 }
 
+.r-label{
+  text-transform: uppercase;
+}
+#modal-company{
+  padding:5px 20px; 
+  border:solid 1px cyan; 
+  border-radius: 55px;
+  margin-left: 10px;
+}
 .ico { 
   height: 150px;
   position: absolute;
@@ -124,6 +133,10 @@ html {
   width: 340px;
   height: 360px;
 }
+
+#right-arrow{ 
+  margin-left: 10px;
+}
 .one-mentor-card {
   display: inline-block;
   border: solid 1px #353535;
@@ -139,7 +152,7 @@ html {
 }
 
 .one-mentor-card:hover #right-arrow {
-  margin-left: 10px;
+  margin-left: 17px;
   transition: 0.2s ease-in-out;
 }
 .mentor-img {
@@ -193,11 +206,8 @@ html {
   transform: rotate(90deg);
   transform-origin: top left;
   text-align: center;
-  /* width:100%; */
   padding: 5px;
-  /* height:100%;  */
-  background: black;
-  left: 0px;
+  background: #ea8d02;
   top: 0px;
   cursor: pointer;
 }
@@ -266,7 +276,7 @@ html {
 }
 
 .close-up {
-  transform: translateX(90%) !important;
+  transform: translateX(91%) !important;
   transition: 0.3s ease-in-out;
 }
 .app-form-container {
@@ -277,7 +287,7 @@ html {
   right: 0px;
   top: 0px;
   z-index: 10;
-  transform: translateX(90%);
+  transform: translateX(91%);
 }
 
 .nav-container {
@@ -301,7 +311,7 @@ html {
   display: inline-block;
   list-style: none;
   text-decoration: none;
-  color: #ff9800;
+  color: white;
   border: solid 0px white;
   cursor: pointer;
 }

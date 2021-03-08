@@ -36,6 +36,7 @@ const generateMentorsForSection = (data) => {
 
 
 const inflateModalWithContent = (data) =>{
+  const company = grab("modal-company")
   const img = grab("modal-img");
   const email = grab("modal-email")
   const phone = grab("modal-phone"); 
@@ -48,6 +49,7 @@ const inflateModalWithContent = (data) =>{
   modalMentorName.innerHTML = data.name; 
   modalBio.innerHTML = data.bio; 
   img.src = data.pic;
+  company.innerHTML = data.company;
 }
 const toggleModal = (data) => {
   if (!modalToggled) {
