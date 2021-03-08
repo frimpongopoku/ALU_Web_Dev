@@ -27,7 +27,10 @@ External Resources Used:
 
   Dummy mentors were used in this application. 
   * I used javascript to generate the html content dynamically 
-  instead of copying and pasting html content which was really hard 
-  to manage.
+  instead of copying and pasting html content which makes changes 
+  and tracking very hard to manage.
   * Animations were done by simply swapping and removing CSS classes 
   in different situations. 
+
+  Please check the (js) folder to get access to files that contain more 
+  explanations to mechanisms being used, and some choice.

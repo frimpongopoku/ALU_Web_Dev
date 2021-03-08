@@ -1,3 +1,32 @@
+/**
+ * This is a coallition of information of dummy mentors 
+ * represented in a form of array. 
+ * Mentors are divided into countries 
+ * The Schema is as follows 
+ * Mentors are grouped by countries in a section, 
+ * and every section, is simple a json object that has properties 
+ * {
+ *  section:"the-id-of-the-related-dom-element", 
+ *  country:"the country", 
+ *  mentors:[ Array of mentors ]
+ * }
+ * 
+ * Mentors Schema: 
+ * { 
+ *  name:..., 
+ *  job:..., 
+ *  company:..., 
+ *  email:..., 
+ *  phone:..., 
+ *  websitie:..., 
+ *  pic:..., 
+ *  bio:...
+ * 
+ * }
+ */
+
+
+
 const lorem = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
 doloremque fuga obcaecati facere, enim quisquam, temporibus optio
 ducimus magni aliquam nulla. Eligendi officia eaque nesciunt facilis
